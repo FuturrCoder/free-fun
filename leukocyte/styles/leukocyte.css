@@ -1,0 +1,117 @@
+body {
+  font-family: "comic sans ms";
+  margin: 0;
+  transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -ms-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+}
+
+#navbar {
+  list-style-type: none;
+  top: 0;
+  height: 3em;
+  padding: 0;
+  margin: 0;
+  background-color: #eee;
+  overflow: hidden;
+  position: sticky;
+}
+
+.navlink {
+  float: left;
+  padding: 0.3em 0.3em;
+  margin: 0.1em 0.5em;
+  border: 1px solid rgba(68, 136, 0, 0.6);
+  border-radius: 0.6em;
+  transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
+}
+
+.navlink:hover {
+  background-color: rgba(68, 136, 0, 0.6);
+}
+
+#navbrand {
+  color: #480;
+  border-bottom: none !important;
+}
+
+#navbrand:hover {
+  color: #000;
+  background-color: default;
+}
+
+#brandlink {
+  float: left;
+  padding: 0.2em 2.3em 0em 0.3em;
+  font-size: 1.5rem;
+}
+
+.navlink a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  border-bottom: none !important;
+  color: #000;
+}
+
+a {
+  text-decoration: none;
+  color: #480;
+  transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
+}
+
+a:hover {
+  border-bottom: 1px solid #480;
+}
+
+#nonNav {
+  margin-left: 0.5em;
+}
+
+#title {
+  margin-bottom: 1.5em;
+  width: 960px;
+  text-align: center;
+  border-bottom: 1px solid black;
+}
+
+#titleText {
+  margin: 0.3em;
+  font-size: 2rem;
+}
+
+.info {
+  font-size: 1.3rem;
+  width: 960px;
+}
+
+@media (max-width: 960px) {
+  #title {
+    width: 100%;
+  }
+
+  #game {
+    width: 100%;
+  }
+
+  .info {
+    width: 100%;
+  }
+}
+
+@media (max-width: 475px) {
+  #navbar {
+    height: 6em;
+  }
+
+  .info {
+    font-size: 1rem;
+  }
+}

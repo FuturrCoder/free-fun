@@ -1,0 +1,43 @@
+body {
+    font-family: monospace;
+    padding: 40px;
+    font-size: 20px;
+    color: #3399FF;
+}
+
+button {
+    font-size: 12px;
+    background-color: #3399FF;
+    /*border-radius: 7px;
+    border: 2px solid #3399FF;
+    transition-duration: 0.4s;
+    background-color: #fff;*/
+}
+
+/*button:hover {
+    background-color: #3399FF;
+}*/
+
+input {
+    font-size: 12px;
+    background-color: #3399FF;
+    /*border-radius: 3px;*/
+}
+
+div.c1 {
+    padding: 20px;
+    width: 20%;
+    border: 2px dotted black;
+}
+
+div.big {
+    padding: 0px 0px 100px 0px;
+}
+
+div.small {
+    padding: 40px 0px 40px 0px;
+}
+
+div.space {
+    padding: 35px 0px 20px 0px;
+}

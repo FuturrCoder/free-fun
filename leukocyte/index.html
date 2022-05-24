@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Leukocyte Game - Free Fun Online</title>
+  <meta charset="utf-8">
+  <meta name="description" content="A tower-defense style game about the immune system">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="Leukocyte Game, Free Fun Online">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="stylesheet" href="./styles/leukocyte.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+  <link rel="manifest" href="./site.webmanifest">
+  <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+
+  <script src="./scripts/phaser.min.js"></script>
+  <script type="text/javascript" src="./scripts/leukocyte.js"></script>
+</head>
+
+<body>
+  <ul id="navbar">
+    <li id="brandlink"><a href="/" id="navbrand">Free Fun Online!</a></li>
+    <li class="navlink"><a href="/">Home</a></li>
+    <li class="navlink"><a href="/projects">Projects</a></li>
+  </ul>
+
+  <div id="nonNav">
+    <main>
+      <div id="title">
+        <p id="titleText"><b>Leukocyte</b></p>
+        <p>Version 0.2.1 Alpha (Instructions Below)</p>
+      </div>
+
+      <div id="game"></div>
+    </main>
+
+    <p class="info">
+      <b>============================ Instructions ============================</b><br/>
+      This is a tower-defense style game about the immune system. Click the bone to earn Glucose
+      and use it to buy White Blood Cells (hover your mouse over the White Blood Cell icon). When the viruses (green)
+      spawn, click the White Blood Cells you bought twice to make them attack a virus. When the White
+      Blood Cells are red, it means they are reloading so you can not use them. The goal of the
+      game is to defend the body (silhouette) and prevent your health from getting to zero. You
+      complete a level by wiping out the wave of infections.
+    </p>
+    <p class="info">
+      <b>=============================== Items ===============================</b><br />
+      <b>White Blood Cell: </b>Description: Moves to a virus and destroys it in 5 seconds.<br />
+      Speed: 50 px/s. Reload: 15s.
+    </p>
+  </div>
+</body>
+
+</html>

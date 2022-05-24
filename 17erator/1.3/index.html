@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2 id="title">17 Generator </h2>
+<h4> version 1.3 </h4>
+<input type="number" id="input" value="10">
+<p></p>
+<button onclick="myFunction()" id="maker">Generate 17's</button>
+<script>
+var genNum = "17 ";
+function myFunction() {
+    var x = document.getElementById("input").value;
+    var number = document.getElementById("newNum").value;
+    var count = 0;
+    while(count < x/10){
+    	document.write(genNum);
+    	count ++;
+    }
+    count = 0;
+    while(count < x/10){
+    	document.write(genNum);
+    	count ++;
+    }    
+    count = 0;
+    while(count < x/10){
+    	document.write(genNum);
+    	count ++;
+    }
+    count = 0;
+    while(count < x/10){
+    	document.write(genNum);
+    	count ++;
+    }
+        count = 0;
+    while(count < x/10){
+    	document.write(genNum);
+    	count ++;
+    }    count = 0;
+    while(count < x/10){
+    	document.write(genNum);
+    	count ++;
+    }    count = 0;
+    while(count < x/10){
+    	document.write(genNum);
+    	count ++;
+    }    count = 0;
+    while(count < x/10){
+    	document.write(genNum);
+    	count ++;
+    }    count = 0;
+    while(count < x/10){
+    	document.write(genNum);
+    	count ++;
+    }    count = 0;
+    while(count < x/10){
+    	document.write(genNum);
+    	count ++;
+    } 
+    document.write("<br> <br>");
+    document.write("Reload page to generate more " + number + "'s");
+}
+function newNum(){
+	var number = document.getElementById("newNum").value;
+	document.getElementById("title").innerHTML = number + " Generator";
+	genNum = number + " ";
+	document.getElementById("maker").innerHTML = "Generate " + number + "'s";
+}
+</script>
+<style>
+body{
+	font-family: monospace;
+	padding: 40px;
+	background-color: #3399ff;
+	font-size: 20px;
+}
+button{
+	font-size:12px;
+}
+input{
+	font-size:12px;
+}
+</style>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<button onclick="newNum()">Change Generate number</button>
+<input id="newNum" type="text" value="17">
+</body>
+</html>

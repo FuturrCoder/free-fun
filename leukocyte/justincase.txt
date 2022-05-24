@@ -1,0 +1,35 @@
+/* 1.7.19
+function targetVirus(virus) {
+  console.log(wbcs);
+  useButton.x = virus.x
+  useButton.y = virus.y + 38
+  useButton.on('pointerdown', () => attackVirus(virus))
+}
+
+function attackVirus(virus) {
+  console.log(wbcs);
+  if (wbcs.length = 0) {
+    useButton.x = -50
+    useButton.y = -50
+  } else {
+    var wbcI
+    var wbcD = 0
+    for (var i = 0; i < wbcs.length; i++) {
+      if (Math.sqrt((virus.x - wbcs[i].x) ^ 2 + (virus.x - wbcs[i].x) ^ 2) > wbcD) {
+        wbcI = i
+        wbcD = Math.sqrt((virus.x - wbcs[i].x) ^ 2 + (virus.x - wbcs[i].x) ^ 2)
+      }
+      var attackVirus = setInterval(function() {
+        if (wbcs[wbcI].x > virus.x - 19 && wbcs[wbcI].x < virus.x + 19 && wbcs[wbcI].y > virus.y - 19 && wbcs[wbcI].y < virus.y + 19) {
+          setTimeout(function() {
+            virus.destroy()
+          }, 3000)
+        } else {
+          wbcs[wbcI].x -= (wbcs[wbcI].x - virus.x) * (3 / (wbcs[wbcI].x - virus.x))
+          wbcs[wbcI].y -= (wbcs[wbcI].y - virus.y) * (3 / (wbcs[wbcI].x - virus.x))
+        }
+      }, 50)
+    }
+  }
+}
+*/

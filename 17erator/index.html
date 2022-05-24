@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title id="title">17erator</title>
+  <meta charset="utf-8">
+  <meta name="description" content="The 17erator is a program for generating stuff for fun!">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="17erator, 17 Generator, Free Fun Online">
+
+  <link rel="stylesheet" type="text/css" href="17styles.css">
+  <link rel="icon" href="./17erator%20Logo.png">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="17script.js"></script>
+</head>
+
+<body>
+  <div id="see">
+    <h2 id="title">17erator</h2>
+    <h4>version 3.0</h4>
+    <input type="number" id="input" value="42">
+    <button id="maker" onclick="generate()">Generate 17s</button>
+    <div class="small"></div>
+    <div class="big">
+      <input type="number" id="amount" value="42">
+      <button onclick="generateImage()">Generate Images</button>
+      <div class="small"></div>
+      <input type="number" id="amountGibb" value="42">
+      <button onclick="generateGibberish()">Generate Gibberish</button>
+    </div>
+    <h3>Options</h3>
+    <div class="c1">
+      <h4>Generating Images</h4>
+      <p>Image Source</p>
+      <input id="imageSrc" type="text" value="http://free-fun.net/17erator/17erator%20Logo.png">
+      <div class="space"></div>
+      <p>Width of image</p>
+      <input id="imageWidth" type="number" value="42">
+      <p>Height of Image</p>
+      <input id="imageHeight" type="number" value="42">
+    </div>
+    <div class="small"></div>
+    <button onclick="newNum()">Change Generate Number</button>
+    <input id="newNum" type="text" value="17">
+    <div class="space"></div>
+    <p id="speedLabel">Speed (if you change the speed, the amount of 17s will be a multiple of the speed)</p>
+    <input type="number" id="speed" value="1">
+    <div class="space"></div>
+    <div class="c1">
+      <button onclick="newColor()">Change Background Color</button>
+      <button onclick="newTc()">Change Text Color</button>
+      <h4>Color </h4>
+      <input type="text" id="color">
+      <div>
+        <p>Red </p>
+        <input type="number" id="r" value="51">
+        <p>Green </p>
+        <input type="number" id="g" value="153">
+        <p>Blue</p>
+        <input type="number" id="b" value="255">
+      </div>
+    </div>
+    <div class="space">
+      <div class="small">
+        <button onclick="newFont()">Change Text Font</button>
+        <input type="text" id="font" value="monospace">
+      </div>
+      <button onclick="newFs()">Change Text Size</button>
+      <input type="number" id="size" value="20">
+    </div>
+    <div class="space">
+      <button onclick="del()">Clear what you generated</button>
+    </div>
+    <div class="space">
+      <button onclick="copy()">Copy generated material to clipboard</button>
+    </div>
+    <div class="space">
+      <p id="here">The 17s will appear here:</p>
+    </div>
+  </div>
+  <div id="generated"></div>
+  <div id="footer">
+    <p>
+      <button class="about" onclick="showAbout()">About
+        <span class="aboutText" id="about">The 17erator is a program for generating stuff for fun!</span>
+      </button>
+    </p>
+  </div>
+  <script>
+    function copy() {
+      var copyThing = document.querySelector('#generated');
+      var range = document.createRange();
+      range.selectNode(copyThing);
+      window.getSelection().addRange(range);
+      var successful = document.execCommand('copy');
+      var msg = successful ? 'successful' : 'unsuccessful';
+      console.log('Copying text command was ' + msg);
+      window.getSelection().removeRange(range);
+    }
+  </script>
+</body>
+
+</html>

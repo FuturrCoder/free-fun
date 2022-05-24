@@ -1,0 +1,78 @@
+{
+	"textures": [
+		{
+			"image": "wbcs.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 1795,
+				"h": 608
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "wbcRed.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 640,
+						"h": 640
+					},
+					"spriteSourceSize": {
+						"x": 8,
+						"y": 0,
+						"w": 632,
+						"h": 606
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 632,
+						"h": 606
+					}
+				},
+				{
+					"filename": "wbcGreen.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 640,
+						"h": 640
+					},
+					"spriteSourceSize": {
+						"x": 19,
+						"y": 26,
+						"w": 611,
+						"h": 587
+					},
+					"frame": {
+						"x": 635,
+						"y": 1,
+						"w": 611,
+						"h": 587
+					}
+				},
+				{
+					"filename": "wbc.svg",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 580,
+						"h": 544
+					},
+					"spriteSourceSize": {
+						"x": 24,
+						"y": 12,
+						"w": 546,
+						"h": 523
+					},
+					"frame": {
+						"x": 1248,
+						"y": 1,
+						"w": 546,
+						"h": 523
+					}
+				}
+			]
+		}
+	]
+}
